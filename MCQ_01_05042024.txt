@@ -1,0 +1,315 @@
+1)How do you declare a one-dimensional array in Java?
+A. int[] myArray;
+
+B. int myArray[];
+
+C. Array myArray;
+
+D. All of the above
+
+Answer: Option A
+2)What is the default initial value of numeric elements in an array of type int in Java?
+A. 0
+
+B. 1
+
+C. -1
+
+D. Null
+
+Answer: Option A
+3)What does the length attribute of an array in Java represent?
+A. The number of elements in the array
+
+B. The maximum value of elements in the array
+
+C. The length of the variable name
+
+D. The number of dimensions
+
+Answer: Option A
+4)How do you access an element in a one-dimensional array named myArray at index 3 in Java?
+A. myArray[3]
+
+B. myArray(3)
+
+C. myArray.get(3)
+
+D. myArray.getElement(3)
+
+Answer: Option A
+5)What is the default initial value of elements in an array of type boolean in Java?
+A. TRUE
+
+B. FALSE
+
+C. 1
+
+D. 0
+
+Answer: Option B
+6)Assuming int size of 4bytes what is the size of int arr[15];?
+a) 15
+b) 19
+c) 11
+d) 60
+Answer:-D
+7)Which of the following expression will delete the entire array pointed to by p?
+a) delete p
+b) delete all p
+c) delete[] p
+d) delete*p
+Answer:- C
+8)public class Main {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = x++;
+        System.out.println(y);
+     }
+}
+a) 10
+b) 11
+c)  9
+d) Compilation error
+Answer:- A
+9) class increment {
+        public static void main(String args[]) 
+        {        
+             int g = 3;
+             System.out.print(++g * 8);
+        } 
+    }
+a) 32
+b) 33
+c) 24
+d) 25 
+Answer:- 24
+10)class variable_scope 
+    {
+        public static void main(String args[]) 
+        {
+            int x;
+            x = 5;
+            {
+	        int y = 6;
+	        System.out.print(x + " " + y);
+            }
+            System.out.println(x + " " + y);
+        } 
+    }
+a) Compilation error
+b) Runtime error
+c) 5 6 5 6
+d) 5 6 5
+Answer:- A
+11)What is the purpose of the System.arraycopy() method in Java?
+A. To copy elements from one array to another.
+
+B. To compare two arrays.
+
+C. To reverse the elements of an array.
+
+D. To find the length of an array.
+
+Answer: Option A
+12)Which of the following is true about the size of an ArrayList in Java?
+A. The size is fixed and cannot change.
+
+B. The size can only increase but not decrease.
+
+C. The size can change dynamically.
+
+D. The size is determined by the length of the elements.
+
+Answer: Option C
+13)What is the purpose of the Arrays.sort() method in Java?
+A. To find the maximum element in an array.
+
+B. To search for an element in an array.
+
+C. To sort the elements of an array.
+
+D. To reverse the elements of an array.
+
+Answer: Option C
+14)class array_output 
+{
+    public static void main(String args[]) 
+    {
+        char array_variable [] = new char[10];
+  for (int i = 0; i < 10; ++i) 
+        {
+            array_variable[i] = 'i';
+            System.out.print(array_variable[i] + "");
+        }
+    } 
+}
+A. 1 2 3 4 5 6 7 8 9 10
+
+B. 0 1 2 3 4 5 6 7 8 9 10
+
+C. i j k l m n o p q r
+
+D. i i i i i i i i i i
+
+Answer: Option D
+15)public class Test{
+      public static void main(String [] args){
+            String s1 = args[1];
+            String s2 = args[2];
+            String s3 = args[3];
+            String s4 = args[4];
+            System.out.print(" args[2] = " + s2);
+      }
+}
+
+and the command-line invocation is C:Java> java Test 1 2 3 4
+A. args[2] = 2
+
+B. args[2] = 3
+
+C. args[2] = null
+
+D. An exception is thrown at runtime.
+
+Answer: Option D
+16)Which is the first line to trigger a compiler error?
+double d1 = 5f; // p1
+double d2 = 5.0; // p2
+float f1 = 5f; // p3
+float f2 = 5.0; // p4
+A. p1
+B. p2
+C. p3
+D. p4
+ Answer:- D
+17) Which of the following does not compile?
+A. double num = 2.718;
+B. double num = 2._718;
+C. double num = 2.7_1_8;
+D. None of the above; they all compile
+
+B. double num = 2._718;
+18) What will be the error in the following Java code?
+
+    byte b = 50;
+    b = b * 50;
+a) b cannot contain value 50
+b) b cannot contain value 100, limited by its range
+c) No error in this code
+d) * operator has converted b * 50 into int, which can not be converted to byte without casting
+Answer: d
+19) Find the output of the following program.
+
+public class Solution{
+       public static void main(String[] args){
+                     byte x = 127;
+                     x++;
+                     x++;
+                     System.out.print(x);
+       }
+}
+a) -127
+ b) 127
+ c) 129
+ d) 0
+ Ans :- A
+20)Find the value of A[1] after execution of the following program?
+int[] A={0,2,4,1,3};
+for(int i=0;i<A.length;i++)
+{ A[i]=A[(A[i]+3)%A.length];
+}
+a)0
+b)1
+c)2
+d)3
+answer:b
+21) Which of these operators is used to allocate memory to array variable in Java?
+a) malloc
+b) alloc
+c) new
+d) new malloc
+answer: option: c
+22). What will be the output of the following Java code?
+
+    class array_output 
+    {
+        public static void main(String args[]) 
+        {
+            int array_variable [] = new int[10];
+	    for (int i = 0; i < 10; ++i) 
+            {
+                array_variable[i] = i;
+                System.out.print(array_variable[i] + " ");
+                i++;
+            }
+        } 
+    }
+
+options:
+a) 0 2 4 6 8
+b) 1 3 5 7 9
+c) 0 1 2 3 4 5 6 7 8 9
+d) 1 2 3 4 5 6 7 8 9 10
+
+
+ Output : $ javac array_output.java
+          $ java array_output
+          0 2 4 6 8 
+answer : option : a
+23). What will be the output of the following Java code?
+
+    class evaluate 
+    {
+        public static void main(String args[]) 
+            {
+	        int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	        int n = 6;
+                n = arr[arr[n] / 2];
+	        System.out.println(arr[n] / 2);
+            } 
+    }
+
+options : 
+a) 3
+b) 0
+c) 6
+d) 1
+
+Output : $ javac evaluate.java
+         $ java evaluate
+         1
+ option : d
+24). What will be the output of the following Java code?
+
+    class array_output 
+    {
+        public static void main(String args[]) 
+        {
+            int array_variable[][] = {{ 1, 2, 3}, { 4 , 5, 6}, { 7, 8, 9}};
+            int sum = 0;
+            for (int i = 0; i < 3; ++i)
+                for (int j = 0; j <  3 ; ++j)
+                    sum = sum + array_variable[i][j];
+            System.out.print(sum / 5);
+        } 
+    }
+
+options : 
+a) 8
+b) 9
+c) 10
+d) 11
+
+output : $ javac array_output.java
+         $ java array_output
+         9
+ option : b
+25).  Which of these is necessary to specify at time of array initialization?
+a) Row
+b) Column
+c) Both Row and Column
+d) None of the mentioned
+
+ option :a
+
